@@ -34,6 +34,12 @@ process:
       cfr_natural: natural
       cfr_plantation: plantation
       cfr_urban: plantation
+  parent:
+    plugin: entity_lookup
+    source: name
+    value_key: name
+    entity_type: asset
+    ignore_case: true
 migration_dependencies:
   required:
     - farm_migrate_area_nfa_land
